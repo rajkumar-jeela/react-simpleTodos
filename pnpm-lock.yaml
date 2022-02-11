@@ -13,7 +13,9 @@ specifiers:
   npm-run-all: 4.1.5
   prettier: 2.2.1
   react: 17.0.1
+  react-alert: 7.0.3
   react-dom: 17.0.1
+  react-icons: 4.3.1
   react-scripts: 4.0.3
 
 dependencies:
@@ -22,7 +24,9 @@ dependencies:
   '@testing-library/user-event': 12.6.2
   chalk: 4.1.0
   react: 17.0.1
+  react-alert: 7.0.3_react-dom@17.0.1+react@17.0.1
   react-dom: 17.0.1_react@17.0.1
+  react-icons: 4.3.1_react@17.0.1
 
 devDependencies:
   eslint-config-airbnb: 18.2.1
@@ -5167,6 +5171,10 @@ packages:
       cssom: 0.3.8
     dev: true
 
+  /csstype/3.0.10:
+    resolution: {integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==}
+    dev: false
+
   /cyclist/1.0.1:
     resolution: {integrity: sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=}
     dev: true
@@ -5419,6 +5427,13 @@ packages:
     dependencies:
       utila: 0.4.0
     dev: true
+
+  /dom-helpers/5.2.1:
+    resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
+    dependencies:
+      '@babel/runtime': 7.16.7
+      csstype: 3.0.10
+    dev: false
 
   /dom-serializer/0.2.2:
     resolution: {integrity: sha512-2/xPb3ORsQ42nHYiSunXkDjPLBaEj/xTwUO4B7XCZQTRk7EBtTOPaygh10YAAh2OI1Qrp6NWfpAhzswj0ydt9g==}
@@ -10377,7 +10392,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
 
   /proxy-addr/2.0.7:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
@@ -10518,6 +10532,18 @@ packages:
       unpipe: 1.0.0
     dev: true
 
+  /react-alert/7.0.3_react-dom@17.0.1+react@17.0.1:
+    resolution: {integrity: sha512-cZ2ZhxytECTxljDfBKpQmwWbfJQFzFf2Qf03L/IB5shbEXtWhDD2JjiW60rwmKT1oZoU+GEnUQw5MFM5+f0B6A==}
+    peerDependencies:
+      react: ^16.8.1 || ^17
+      react-dom: ^16.8.1 || ^17
+    dependencies:
+      prop-types: 15.8.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+      react-transition-group: 4.4.2_react-dom@17.0.1+react@17.0.1
+    dev: false
+
   /react-app-polyfill/2.0.0:
     resolution: {integrity: sha512-0sF4ny9v/B7s6aoehwze9vJNWcmCemAUYBVasscVr92+UYiEqDXOxfKjXN685mDaMRNF3WdhHQs76oTODMocFA==}
     engines: {node: '>=10'}
@@ -10575,9 +10601,16 @@ packages:
     resolution: {integrity: sha512-mKR90fX7Pm5seCOfz8q9F+66VCc1PGsWSBxKbITjfKVQHMNF2zudxHnMdJiB1fRCb+XsbQV9sO9DCkgsMQgBIA==}
     dev: true
 
+  /react-icons/4.3.1_react@17.0.1:
+    resolution: {integrity: sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 17.0.1
+    dev: false
+
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-    dev: true
 
   /react-is/17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
@@ -10677,6 +10710,20 @@ packages:
       - webpack-hot-middleware
       - webpack-plugin-serve
     dev: true
+
+  /react-transition-group/4.4.2_react-dom@17.0.1+react@17.0.1:
+    resolution: {integrity: sha512-/RNYfRAMlZwDSr6z4zNKV6xu53/e2BuaBbGhbyYIXTrmgu/bGHzmqOs7mJSJBHy9Ud+ApHx3QjrkKSp1pxvlFg==}
+    peerDependencies:
+      react: '>=16.6.0'
+      react-dom: '>=16.6.0'
+    dependencies:
+      '@babel/runtime': 7.16.7
+      dom-helpers: 5.2.1
+      loose-envify: 1.4.0
+      prop-types: 15.8.1
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+    dev: false
 
   /react/17.0.1:
     resolution: {integrity: sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==}
